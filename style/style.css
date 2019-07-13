@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Itim;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-shadow: 2px 2px 2px #bbb;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #bbb;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+section#carousel > figure > img {
+    display: none;
+    margin: 0;
+}
+
+section#carousel > figure.visible > img {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px #555;
+}
+
+section#carousel > figure > figcaption {
+    display: none;
+}
+
+section#carousel > figure.visible > figcaption {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
